@@ -13,6 +13,8 @@
 
 <style >
 .Spinner {
+    margin-top: 5em;
+    margin-left: 50%;
     display: inline-block;
     position: relative;
     width: 80px;
@@ -31,7 +33,7 @@
     width: 7px;
     height: 7px;
     border-radius: 50%;
-    background: var(--inverted-bg-color);
+    background: #333;
     margin: -4px 0 0 -4px;
 }
 

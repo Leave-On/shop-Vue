@@ -12,10 +12,12 @@
 import { ref, onMounted } from 'vue'
 import { Navbar } from '../widgets/Navbar';
 import { useUserStore } from './stores/userStore'
+import LoadingSpinner from '../shared/ui/LoadinSpinner/LoadingSpinner.vue'
+import ErrorComponent from '../shared/ui/ErrorComponent/ErrorComponent.vue'
 
 const theme = ref('light')
 const userStore = useUserStore()
-const loading = ref(false)
+const loading = ref(true)
 
 function toggleTheme() {
   theme.value = theme.value === 'light' ? 'dark' : 'light'
@@ -29,6 +31,10 @@ onMounted(() => {
       userStore.setIsAdmin(true)
     }
   }
+  if (localStorage.getItem('userCart')) {
+    userStore.setUserCart(JSON.parse(localStorage.getItem('userCart')))
+  }
+  loading.value = false
 })
 
 </script>
