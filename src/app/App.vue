@@ -12,7 +12,6 @@
 import { ref, onMounted } from 'vue'
 import { Navbar } from '../widgets/Navbar';
 import { useUserStore } from './stores/userStore'
-import { check } from '../../http/userApi';
 
 const theme = ref('light')
 const userStore = useUserStore()

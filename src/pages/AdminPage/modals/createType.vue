@@ -32,13 +32,12 @@
 
 <script setup>
 import { ref } from 'vue';
-import { createType } from '../../../../http/deviceApi';
 
 const deviceType = ref('')
 
 const addType = () => {
   console.log(deviceType.value);
-  createType({name: deviceType.value}).then(() => deviceType.value = '')
+  // createType({name: deviceType.value}).then(() => deviceType.value = '')
 }
 
 </script>

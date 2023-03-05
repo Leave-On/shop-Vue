@@ -89,7 +89,6 @@
 <script setup>
 import { ref } from 'vue';
 import { useDeviceStore } from '../../../app/stores/deviceStore'
-import { fetchTypes, fetchBrands, createDevice } from '../../../../http/deviceApi';
 
 const deviceStore = useDeviceStore()
 const deviceType = ref('')
@@ -127,15 +126,15 @@ const addDevice = () => {
   newDevice.append('info', JSON.stringify(infos.value))
 
 
-  createDevice(newDevice).then(() => {
-    deviceName.value = ''
-    devicePrice.value = ''
-    deviceImage.value = []
-    deviceType.value = ''
-    deviceBrand.value = ''
-    infos.value = []
-    console.log('gotcha')
-  })
+  // createDevice(newDevice).then(() => {
+  //   deviceName.value = ''
+  //   devicePrice.value = ''
+  //   deviceImage.value = []
+  //   deviceType.value = ''
+  //   deviceBrand.value = ''
+  //   infos.value = []
+  //   console.log('gotcha')
+  // })
 }
 
 </script>

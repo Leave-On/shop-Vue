@@ -32,16 +32,15 @@
 
 <script setup>
 import { ref } from 'vue';
-import { createBrand } from '../../../../http/deviceApi';
 import { useDeviceStore } from '../../../app/stores/deviceStore';
 
 const deviceBrand = ref('')
 const deviceStore = useDeviceStore()
 
-const addBrand = () => {
-  createBrand({name: deviceBrand.value})
-  .then(() => deviceStore.brands.splice(deviceStore.brands.length + 1))
-  .then(() => deviceBrand.value = '')
-}
+// const addBrand = () => {
+//   createBrand({name: deviceBrand.value})
+//   .then(() => deviceStore.brands.splice(deviceStore.brands.length + 1))
+//   .then(() => deviceBrand.value = '')
+// }
 
 </script>
