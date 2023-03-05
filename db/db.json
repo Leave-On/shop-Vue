@@ -1,0 +1,42 @@
+{
+  "types": [
+    {"id": 1, "name": "Phones"},
+    {"id": 2, "name": "Fridges"},
+    {"id": 3, "name": "TVs"},
+    {"id": 4, "name": "Laptops"}
+  ],
+  "brands": [
+    {"id": 1, "name": "Sony"},
+    {"id": 2, "name": "Apple"},
+    {"id": 3, "name": "Samsung"},
+    {"id": 4, "name": "Acer"}
+  ],
+  "devices": [
+    {"id": 6, "name": "KDL43", "price": 43000, "rating": null, "typeId": 3, "brandId": 1, "img": "/tv.jpg"},
+    {"id": 7, "name": "Iphone 7", "price": 34000, "rating": null, "typeId": 1, "brandId": 2, "img": "/iphone.jpg"},
+    {"id": 8, "name": "Predator", "price": 78000, "rating": null, "typeId": 4, "brandId": 4, "img": "/notebook.jpg"},
+    {"id": 9, "name": "SuperCool", "price": 25000, "rating": null, "typeId": 2, "brandId": 4, "img": "/fridge.jpg"},
+    {"id": 10, "name": "Macbook Pro", "price": 250000, "rating": null, "typeId": 4, "brandId": 2, "img": "/laptop.jpg"},
+    {"id": 11, "name": "S23", "price": 250000, "rating": null, "typeId": 1, "brandId": 3, "img": "/samsung.jpeg"},
+    {"id": 12, "name": "Note 20", "price": 54321, "rating": null, "typeId": 1, "brandId": 3, "img": "/note.jpg"}
+  ],
+  "description": [
+    {"id": 1, "title": "Size", "description":"43", "deviceId": 6},
+    {"id": 2, "title": "Country", "description":"Japan", "deviceId": 6},
+    {"id": 3, "title": "Camera", "description":"yes", "deviceId": 7},
+    {"id": 4, "title": "Screen", "description":"not big enough", "deviceId": 7},
+    {"id": 5, "title": "Screen", "description":"yes", "deviceId": 8},
+    {"id": 6, "title": "Chipset", "description":"intel i-5", "deviceId": 8},
+    {"id": 7, "title": "Freezer", "description":"yes", "deviceId": 9},
+    {"id": 8, "title": "Has doors", "description":"yes", "deviceId": 9},
+    {"id": 9, "title": "Color", "description":"white", "deviceId": 9},
+    {"id": 10, "title": "Expensive", "description":"yes", "deviceId": 10},
+    {"id": 11, "title": "Does work", "description":"yes", "deviceId": 10},
+    {"id": 12, "title": "Keyboard", "description":"yes", "deviceId": 10},
+    {"id": 12, "title": "Battery", "description":"one piece", "deviceId": 11},
+    {"id": 12, "title": "Camera", "description":"good", "deviceId": 11}
+  ],
+  "users": [
+    {"id": 1, "username": "admin", "password": "1234", "role": "admin"}
+  ]
+}
