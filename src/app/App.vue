@@ -12,8 +12,6 @@
 import { ref, onMounted } from 'vue'
 import { Navbar } from '../widgets/Navbar';
 import { useUserStore } from './stores/userStore'
-import LoadingSpinner from '../shared/ui/LoadinSpinner/LoadingSpinner.vue'
-import ErrorComponent from '../shared/ui/ErrorComponent/ErrorComponent.vue'
 
 const theme = ref('light')
 const userStore = useUserStore()

@@ -18,3 +18,5 @@ export default defineConfig({
     }
   }
 })
+
+// const isDev = mode === 'development'

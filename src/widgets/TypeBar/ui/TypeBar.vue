@@ -1,7 +1,7 @@
 <template>
   <v-container class="mt-4">
     <v-list>
-      <v-list-subheader>Product type</v-list-subheader>
+      <v-list-subheader>{{ $t('product-type') }}</v-list-subheader>
       <v-list-item
       class="mb-1"
         v-for="(type) in deviceStore.types"
@@ -11,7 +11,7 @@
         variant="tonal"
         @click="setType(type)"
       >
-        {{type.name}}
+        {{ type.name }}
       </v-list-item>
     </v-list>
   </v-container>
